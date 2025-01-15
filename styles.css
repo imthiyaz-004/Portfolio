@@ -1,0 +1,338 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+/* Landing Page Styles */
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #fff;
+    color: #000000;
+    text-align: center;
+}
+/* Navigation Bar */
+nav {
+    display: flex;
+    position: fixed;
+    justify-content: space-between; /* Positions the logo and links */
+    align-items: center;
+    padding: 20px 40px; /* Adjusts padding */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Ensures the nav bar takes up the full width of the screen */
+    box-sizing: border-box; 
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #DC143C; /* Crimson Red */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    flex-shrink: 0; /* Prevents the logo from shrinking */
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px; /* Space between the links */
+    justify-content: flex-end; /* Aligns the links to the right */
+}
+
+.nav-links a {
+    color: #333; /* Dark color for the text */
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.nav-links a:hover {
+    color: #DC143C; /* Crimson Red */
+    transform: translateY(-3px); /* Slight lift effect on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 20px; /* Reduces padding for small screens */
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 15px; /* Adjust gap for smaller screens */
+        width: 100%; /* Ensures the nav links stretch across the width */
+        text-align: center; /* Centers the links */
+    }
+}
+
+
+.landing-page .profile-img {
+    border-radius: 50%;
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 1.8s ease-in-out
+}
+.landing-page .profile-img.fade-in {
+    opacity: 1; /* Fully visible */
+}
+
+.landing-page h1 span {
+    color: #e74c3c;
+    font-size: 35px;
+}
+
+.landing-page p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-size: 25px;
+}
+
+.landing-page .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.landing-page .social-icon {
+    margin: 0 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+.landing-page .social-icon:hover {
+    color: #e74c3c;
+}
+
+/* About Me Section */
+.about {
+    padding: 50px 20px;
+    text-align: justify;
+    justify-content: center;
+    justify-items: center;
+    background-color: #ffffff;
+    color: #333;
+    min-height: 100vh;
+}
+
+.about-content {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.resume-btn {
+    margin-top: 30px;
+    padding: 10px 20px;
+    justify-content: center;
+    justify-items: center;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.resume-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Featured Projects Section */
+.projects {
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+    min-height: 80vh;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.project-card:hover {
+    background-color: #e74c3c;
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    color: #333;
+}
+
+.project-card p {
+    color: #555;
+}
+
+/* Education and Experience Section */
+.education-experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+    height: 550px;
+}
+
+.edu-experience-btns {
+    margin-bottom: 20px;
+}
+
+.edu-btn,
+.exp-btn {
+    background-color: #f5f5f5;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edu-btn:hover,
+.exp-btn:hover {
+    background-color: #DC143C; /* Darker red on hover */
+}
+
+.edu-btn.active,
+.exp-btn.active {
+    background-color: #DC143C; /* Active button color */
+    color: #fff;
+}
+
+.education,
+.experience {
+    display: none; /* Initially hide both sections */
+    max-width: 400px;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education ul {
+    text-align: left;
+    padding-left: 20px;
+}
+
+#educationSection {
+    display: block; /* Show Education by default */
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.skills-box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skills-box-content {
+    background-color: #f7f7f7;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.skills-box-content:hover {
+    background-color: #e74c3c;
+    transform: translateY(-10px);
+    color: white;
+}
+
+.skills-box-content h3 {
+    color: #333;
+}
+
+.skills-box-content p {
+    position: relative;
+    padding-left: 30px; /* Adds space for the bullet */
+    margin-bottom: 10px; /* Adds space between bullet points */
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-box-content p::before {
+    content: '\2022'; /* Unicode character for a bullet point */
+    font-size: 1.5rem; /* Bullet size */
+    color: #DC143C; /* Crimson Red bullet color */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* Get in Touch Section */
+.get-in-touch {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.get-in-touch .social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.get-in-touch .social-icon {
+    margin: 0 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.get-in-touch .social-icon:hover {
+    color: #e74c3c;
+}
+
+#top-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    font-size: 1.8rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 50%; /* Ensures the button is round */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow effect */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+}
+
+#top-button:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
