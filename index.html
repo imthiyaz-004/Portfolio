@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMTHIYAZ K - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Global Iron Man Background Animations -->
+    <div class="global-iron-man-effects">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6"></div>
+            <div class="shape shape-7"></div>
+            <div class="shape shape-8"></div>
+        </div>
+        <div class="arc-reactor arc-reactor-1">
+            <div class="reactor-core"></div>
+            <div class="reactor-ring ring-1"></div>
+            <div class="reactor-ring ring-2"></div>
+            <div class="reactor-ring ring-3"></div>
+        </div>
+        <div class="arc-reactor arc-reactor-2">
+            <div class="reactor-core"></div>
+            <div class="reactor-ring ring-1"></div>
+            <div class="reactor-ring ring-2"></div>
+        </div>
+        <div class="holographic-grid">
+            <div class="grid-line horizontal" style="top: 15%"></div>
+            <div class="grid-line horizontal" style="top: 35%"></div>
+            <div class="grid-line horizontal" style="top: 55%"></div>
+            <div class="grid-line horizontal" style="top: 75%"></div>
+            <div class="grid-line horizontal" style="top: 95%"></div>
+            <div class="grid-line vertical" style="left: 15%"></div>
+            <div class="grid-line vertical" style="left: 35%"></div>
+            <div class="grid-line vertical" style="left: 55%"></div>
+            <div class="grid-line vertical" style="left: 75%"></div>
+            <div class="grid-line vertical" style="left: 95%"></div>
+        </div>
+        <div class="particle-system">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+            <div class="particle particle-6"></div>
+            <div class="particle particle-7"></div>
+            <div class="particle particle-8"></div>
+            <div class="particle particle-9"></div>
+            <div class="particle particle-10"></div>
+        </div>
+        <div class="energy-beams">
+            <div class="beam beam-1"></div>
+            <div class="beam beam-2"></div>
+            <div class="beam beam-3"></div>
+            <div class="beam beam-4"></div>
+            <div class="beam beam-5"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">IK</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" role="switch" aria-checked="false">
+                    <div class="theme-toggle-icon">
+                        <div class="sun-icon">☀️</div>
+                        <div class="moon-icon">🌙</div>
+                    </div>
+                </button>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-name">IMTHIYAZ K</h1>
+                <p class="hero-tagline">Final-year Computer Science Engineer | AI & Data Science Enthusiast | Creative Writer</p>
+                <p class="hero-intro">Where algorithms meet artistry, and code transforms into compelling stories</p>
+                <div class="hero-cta">
+                    <a href="#about" class="cta-button">Explore My Journey</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-container">
+                    <div class="profile-image">
+                        <div class="profile-glow"></div>
+                        <div class="scanning-line"></div>
+                        <img src="assets/profile-picture.jpg" alt="IMTHIYAZ K" class="profile-img">
+                        <div class="hud-overlay">
+                            <div class="hud-corner top-left"></div>
+                            <div class="hud-corner top-right"></div>
+                            <div class="hud-corner bottom-left"></div>
+                            <div class="hud-corner bottom-right"></div>
+                        </div>
+                    </div>
+                    <div class="code-animation">
+                        <div class="terminal-header">
+                            <div class="terminal-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="terminal-title">ZENITH.exe</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-prompt">></span>
+                            <span class="code-text">Initializing AI systems...</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-prompt">></span>
+                            <span class="code-text">Loading neural networks...</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-prompt">></span>
+                            <span class="code-text">Ready for innovation.</span>
+                        </div>
+                        <div class="status-indicators">
+                            <div class="status-item">
+                                <div class="status-dot active"></div>
+                                <span>AI-Online</span>
+                            </div>
+                            <div class="status-item">
+                                <div class="status-dot active"></div>
+                                <span>Systems-Ready</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-info">
+                    <div class="location-info">
+                        <div class="location-icon">📍</div>
+                        <span>Bengaluru, Karnataka, India</span>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-label">Email:</span>
+                            <a href="mailto:imthiyazk004@gmail.com">imthiyazk004@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Phone:</span>
+                            <span>+91 7892834580</span>
+                        </div>
+                    </div>
+                    <p class="about-summary">
+                        Final-year CSE student, skilled in AI, full-stack development, problem-solving, and content creation. 
+                        Vice President of E-Cell, hackathon finalist, and published writer passionate about bridging 
+                        technology with creativity.
+                    </p>
+                </div>
+                <div class="education-timeline">
+                    <h3>Education Journey</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>BE Computer Science Engineering</h4>
+                                <p class="institution">VTU, Oxford College, Bengaluru</p>
+                                <p class="grade">CGPA: 8.4</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>XII Grade</h4>
+                                <p class="institution">Mahesh PU College</p>
+                                <p class="grade">89% | Student of the Year (2022)</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>X Grade</h4>
+                                <p class="institution">SPES</p>
+                                <p class="grade">87% (2020)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="card-header">
+                        <div class="card-icon">🎯</div>
+                        <h3>Vice President</h3>
+                        <span class="company">E-Cell</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Led a team of 15+ members and organized major events including Vicharagni and NEC collaboration with IIT Bombay.</p>
+                        <div class="card-details">
+                            <span class="duration">2023 - 2025</span>
+                            <span class="type">Leadership</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="card-header">
+                        <div class="card-icon">🤖</div>
+                        <h3>Data Science Intern</h3>
+                        <span class="company">YBI</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Built machine learning models and developed cancer prediction systems using Pandas and Scikit-learn.</p>
+                        <div class="card-details">
+                            <span class="duration">2024</span>
+                            <span class="type">Internship</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-card">
+                    <div class="card-header">
+                        <div class="card-icon">✍️</div>
+                        <h3>Technical Writer</h3>
+                        <span class="company">Freelance</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Grew audience of 550+ readers across Medium and LinkedIn, specializing in AI and technology topics.</p>
+                        <div class="card-details">
+                            <span class="duration">2023 - Present</span>
+                            <span class="type">Content Creation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">⚡</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Evolv - Productivity Tool</h3>
+                        <p>Location-based reminders and voice-to-text functionality for enhanced productivity.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Geolocation API</span>
+                            <span class="tech-tag">Web Speech API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/imthiyaz-004/Evolv" target="_blank" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">🔐</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Crack-Time-Estimator</h3>
+                        <p>Web application for estimating password crack time using various algorithms and security metrics. Built with Python Flask.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">HTML/CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/imthiyaz-004/Crack-Time-Estimator.git" target="_blank" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">🎯</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Breast Cancer Prediction Model</h3>
+                        <p>Machine learning model built with Python and Scikit-learn for early cancer detection.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/imthiyaz-004/CancerPrediction" target="_blank" class="project-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles Section -->
+    <section id="featured-articles" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Articles</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/NobodyActuallyKnows.jpeg" alt="Nobody Actually Knows How AI Works">
+                    </div>
+                    <div class="project-content">
+                        <h3>Nobody Actually Knows How AI Works</h3>
+                        <p>On black-box models, emergence, and why interpretability matters for trust and control.</p>
+                        <div class="project-links">
+                            <a href="https://www.linkedin.com/pulse/nobody-actually-knows-how-ai-works-imthiyaz-k-ioi6c" target="_blank" class="project-link">Read Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/StopExperimentingWithAI.jpeg" alt="Stop Experimenting with AI. Start Building.">
+                    </div>
+                    <div class="project-content">
+                        <h3>Stop Experimenting with AI. Start Building.</h3>
+                        <p>Practical mindset shift from tinkering to execution for real-world AI impact.</p>
+                        <div class="project-links">
+                            <a href="https://www.linkedin.com/pulse/stop-experimenting-ai-start-building-imthiyaz-k-wfmic" target="_blank" class="project-link">Read Article</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/DoLLMsKnow.jpeg" alt="Do LLMs Know Strategy?">
+                    </div>
+                    <div class="project-content">
+                        <h3>Do LLMs Know Strategy?</h3>
+                        <p>Exploring whether language models exhibit strategic behavior beyond pattern matching.</p>
+                        <div class="project-links">
+                            <a href="https://www.linkedin.com/pulse/do-llms-know-strategy-imthiyaz-k-jgq4c" target="_blank" class="project-link">Read Article</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="skills-onepage">
+                <div class="skills-grid">
+                    <div class="skills-card">
+                        <h3>Programming Languages</h3>
+                        <ul class="pill-list">
+                            <li class="pill"><span>Python (Advanced)</span><i style="--fill:92%"></i></li>
+                            <li class="pill"><span>Java</span><i style="--fill:85%"></i></li>
+                            <li class="pill"><span>C</span><i style="--fill:80%"></i></li>
+                            <li class="pill"><span>C++</span><i style="--fill:78%"></i></li>
+                        </ul>
+                    </div>
+                    <div class="skills-card">
+                        <h3>AI/ML Tools</h3>
+                        <ul class="pill-list">
+                            <li class="pill"><span>Pandas</span><i style="--fill:88%"></i></li>
+                            <li class="pill"><span>NumPy</span><i style="--fill:86%"></i></li>
+                            <li class="pill"><span>Scikit-learn</span><i style="--fill:85%"></i></li>
+                            <li class="pill"><span>Google Colab</span><i style="--fill:82%"></i></li>
+                            <li class="pill"><span>Jupyter</span><i style="--fill:84%"></i></li>
+                            <li class="pill"><span>Cursor</span><i style="--fill:80%"></i></li>
+                            <li class="pill"><span>LangChain</span><i style="--fill:78%"></i></li>
+                            <li class="pill"><span>Ollama</span><i style="--fill:72%"></i></li>
+                        </ul>
+                    </div>
+                    <div class="skills-card">
+                        <h3>Web Technologies</h3>
+                        <ul class="pill-list">
+                            <li class="pill"><span>HTML5</span><i style="--fill:95%"></i></li>
+                            <li class="pill"><span>CSS3</span><i style="--fill:92%"></i></li>
+                            <li class="pill"><span>JavaScript</span><i style="--fill:88%"></i></li>
+                            <li class="pill"><span>React.js</span><i style="--fill:80%"></i></li>
+                        </ul>
+                    </div>
+                    <div class="skills-card">
+                        <h3>Databases & Other Tools</h3>
+                        <ul class="pill-list">
+                            <li class="pill"><span>MySQL</span><i style="--fill:82%"></i></li>
+                            <li class="pill"><span>MongoDB</span><i style="--fill:78%"></i></li>
+                        </ul>
+                    </div>
+                    <div class="skills-card">
+                        <h3>CS Core</h3>
+                        <ul class="pill-list">
+                            <li class="pill"><span>DSA</span><i style="--fill:85%"></i></li>
+                            <li class="pill"><span>OOP</span><i style="--fill:84%"></i></li>
+                            <li class="pill"><span>OS</span><i style="--fill:78%"></i></li>
+                            <li class="pill"><span>DBMS</span><i style="--fill:80%"></i></li>
+                            <li class="pill"><span>CN</span><i style="--fill:76%"></i></li>
+                        </ul>
+                    </div>
+                    <div class="skills-card">
+                        <h3>Soft Skills</h3>
+                        <ul class="pill-list">
+                            <li class="pill"><span>Leadership</span><i style="--fill:90%"></i></li>
+                            <li class="pill"><span>Problem-Solving</span><i style="--fill:88%"></i></li>
+                            <li class="pill"><span>Communication Skills</span><i style="--fill:86%"></i></li>
+                            <li class="pill"><span>Technical Writing</span><i style="--fill:84%"></i></li>
+                            <li class="pill"><span>Collaboration</span><i style="--fill:85%"></i></li>
+                            <li class="pill"><span>Agile</span><i style="--fill:80%"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements & Certifications Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Achievements & Certifications</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="accolades">
+                <div class="accolades-toggle">
+                    <button class="toggle-btn active" data-target="#achievements-list">Achievements</button>
+                    <button class="toggle-btn" data-target="#certifications-list">Certifications</button>
+                </div>
+                <div class="achievements-column" id="achievements-column">
+                    <h3 class="column-title">Achievements & Awards</h3>
+                    <div class="awards-list" id="achievements-list">
+                        <div class="award-card">
+                            <div class="award-icon">🏆</div>
+                            <div class="award-content">
+                                <h4>Hackathon Winner</h4>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <div class="award-icon">🥈</div>
+                            <div class="award-content">
+                                <h4>Second Runner-up - BrinHack National Hackathon 2025</h4>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <div class="award-icon">🏁</div>
+                            <div class="award-content">
+                                <h4>Finalist - Hacknovate 6.0 (5000+ participants)</h4>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <div class="award-icon">🎓</div>
+                            <div class="award-content">
+                                <h4>Represented college at IIT Bombay E-Summit 2025 as Secretary</h4>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <div class="award-icon">🧩</div>
+                            <div class="award-content">
+                                <h4>1st Place - Puzzle Pandemonium & Cipher Chase by ISTE-TOCE (2024)</h4>
+                            </div>
+                        </div>
+                        <div class="award-card">
+                            <div class="award-icon">🤝</div>
+                            <div class="award-content">
+                                <h4>3rd Place - Taboo Meets ChatGPT by CSI-TOCE (2024)</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="certifications-column hidden" id="certifications-column">
+                    <h3 class="column-title">Certifications</h3>
+                    <div class="certifications-grid hidden" id="certifications-list">
+                        <div class="certification-card">
+                            <div class="cert-icon">☁️</div>
+                            <h3>AWS Cloud Practitioner Essentials</h3>
+                            <p>Simplilearn & AWS</p>
+                            <div class="cert-badge">Cloud Computing</div>
+                        </div>
+                        <div class="certification-card">
+                            <div class="cert-icon">📊</div>
+                            <h3>Data Science and AIML</h3>
+                            <p>YBI Foundation (Jul 2024)</p>
+                            <div class="cert-badge">Data Science</div>
+                        </div>
+                        <div class="certification-card">
+                            <div class="cert-icon">📈</div>
+                            <h3>Technology Job Simulation Certificate</h3>
+                            <p>Deloitte (via Forage), July 2025</p>
+                            <div class="cert-badge">Business Analytics</div>
+                        </div>
+                        <div class="certification-card">
+                            <div class="cert-icon">🗄️</div>
+                            <h3>SQL Certification</h3>
+                            <p>Simplilearn</p>
+                            <div class="cert-badge">Database</div>
+                        </div>
+                        <div class="certification-card">
+                            <div class="cert-icon">🎓</div>
+                            <h3>Certificate of Completion - Summer Analytics 2025</h3>
+                            <p>IIT Guwahati</p>
+                            <div class="cert-badge">Analytics</div>
+                        </div>
+                        <div class="certification-card">
+                            <div class="cert-icon">🤖</div>
+                            <h3>AI Fundamentals</h3>
+                            <p>IBM SkillsBuild (2025)</p>
+                            <div class="cert-badge">Artificial Intelligence</div>
+                        </div>
+                        <div class="certification-card">
+                            <div class="cert-icon">🇮🇳</div>
+                            <h3>Smart India Hackathon 2024 Certification</h3>
+                            <p>National Event</p>
+                            <div class="cert-badge">Hackathon</div>
+                        </div>
+                        <div class="certification-card">
+                            <div class="cert-icon">🧠</div>
+                            <h3>NEC '24 Basic Track</h3>
+                            <p>IIT-Bombay</p>
+                            <div class="cert-badge">Entrepreneurship</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creative Writing Section -->
+    <section id="writing" class="writing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Creative Writing</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="writing-content">
+                <div class="writing-intro">
+                    <p>Exploring the intersection of technology and creativity through thoughtful articles and insights.</p>
+                </div>
+                <div class="writing-platforms">
+                    <div class="platform-card">
+                        <div class="platform-icon">🔖</div>
+                        <h3>Substack</h3>
+                        <p>Regular articles on AI, technology trends, and creative insights</p>
+                        <a href="https://open.substack.com/pub/imthiyaz" target="_blank" class="platform-link">Subscribe Now</a>
+                    </div>
+                    <div class="platform-card">
+                        <div class="platform-icon">✍️</div>
+                        <h3>Medium</h3>
+                        <p>Technology and thought leadership pieces</p>
+                        <a href="#" class="platform-link">Take a Look</a>
+                    </div>
+                    <div class="platform-card">
+                        <div class="platform-icon">📰</div>
+                        <h3>Optimao Newsletter</h3>
+                        <p>Smart stories behind the algorithms - AI and tech insights</p>
+                        <a href="https://www.linkedin.com/newsletters/optimao-7331316931142082560" target="_blank" class="platform-link">Join the Newsletter
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="hobbies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Beyond Code</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="hobbies-grid">
+                <div class="hobby-item">
+                    <div class="hobby-icon">📚</div>
+                    <h3>Reading</h3>
+                    <p>Exploring diverse genres from technical literature to creative fiction</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">✍️</div>
+                    <h3>Creative Writing</h3>
+                    <p>Crafting stories that bridge technology and human experience</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">🏃</div>
+                    <h3>Running</h3>
+                    <p>Finding clarity and inspiration through physical movement</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- External Links Section -->
+    <section id="links" class="links">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Connect With Me</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="links-grid">
+                <a href="https://linkedin.com/in/imthiyaz-k" target="_blank" class="link-item">
+                    <div class="link-icon">💼</div>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/imthiyaz-004" target="_blank" class="link-item">
+                    <div class="link-icon">💻</div>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://x.com/Imthiyaz2004?t=QSQFMgIlitcoQpqGGXuC9g&s=09" target="_blank" class="link-item">
+                    <div class="link-icon">🐦</div>
+                    <span>X (Twitter)</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-decoration"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Create Something Amazing Together</h3>
+                    <p>Whether you're interested in AI projects, creative collaborations, or just want to discuss technology and innovation, I'd love to hear from you.</p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <span class="contact-label">Email:</span>
+                            <a href="mailto:imthiyazk004@gmail.com">imthiyazk004@gmail.com</a>
+                        </div>
+                        <div class="contact-detail">
+                            <span class="contact-label">Location:</span>
+                            <span>Bengaluru, Karnataka, India</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Subject</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 IMTHIYAZ K. Crafted with passion for technology and creativity.</p>
+                </div>
+                <div class="footer-decoration">
+                    <div class="footer-shape"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- EmailJS CDN (replace PUBLIC_KEY in script.js init if you add it here) -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS with your public key
+        (function(){
+            if (window.emailjs) {
+                emailjs.init({ publicKey: 'jlBPEqAmRByw5tT7c' });
+            }
+        })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
