@@ -1601,7 +1601,7 @@ section {
 
 .writing-platforms {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr; /* stack cards vertically */
     gap: 30px;
     max-width: 900px;
     margin: 0 auto;
