@@ -1991,6 +1991,99 @@ section {
 
     /* Ensure section content never hides under navbar */
     section:first-of-type { scroll-margin-top: 70px; }
+
+    .nav-links {
+        display: none;
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+    
+    /* Ensure navbar height is consistent */
+    .navbar { height: 60px; }
+    .nav-container { height: 60px; }
+    
+    /* Offset hero from fixed navbar */
+    #hero.hero { padding-top: 96px; }
+
+    /* Reorder hero: picture first, then text */
+    .hero-visual { order: -1; justify-content: center; }
+    .profile-container { margin: 0 auto; }
+    .hero-text { text-align: center; }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+    
+    .hero-name {
+        font-size: 2.5rem;
+    }
+    
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .code-animation {
+        width: 280px;
+        height: 200px;
+    }
+    
+    .arc-reactor {
+        width: 80px;
+        height: 80px;
+        top: 10%;
+        right: 5%;
+    }
+    
+    .reactor-core {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .ring-1 { width: 40px; height: 40px; }
+    .ring-2 { width: 55px; height: 55px; }
+    .ring-3 { width: 70px; height: 70px; }
+    
+    .iron-man-effects {
+        opacity: 0.7;
+    }
+    
+    /* Hide custom cursor on mobile */
+    .jarvis-cursor,
+    .jarvis-cursor-dot {
+        display: none;
+    }
+    
+    body {
+        cursor: auto;
+    }
+    
+    /* Reduce global animations on mobile for performance */
+    .global-iron-man-effects {
+        opacity: 0.6;
+    }
+    
+    .arc-reactor-2,
+    .shape-6,
+    .shape-7,
+    .shape-8,
+    .particle-7,
+    .particle-8,
+    .particle-9,
+    .particle-10,
+    .beam-4,
+    .beam-5 {
+        display: none;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
 }
 
 @media (max-width: 480px) {
